@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/images/favicon-art-gallery.png"
+    />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <style>
+      .leaflet-tile-pane {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+    </style>
+    <title>Art Gallery</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body
+    class="flex h-full w-full flex-col items-center justify-center bg-[#FCFAF9]"
+  >
+    <div id="root" class="grid w-full max-w-[96rem] place-items-center"></div>
+    <script type="module" src="/src/index.jsx"></script>
   </body>
 </html>
