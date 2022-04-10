@@ -6,7 +6,10 @@ import iconArrowLeft from "../../images/icon-arrow-left.svg";
 const Header = () => {
   return (
     <header className="relative w-full">
-      <Link className="group absolute top-0 left-0 z-20 flex self-start" to="/">
+      <Link
+        className="group absolute top-0 left-0 z-20 flex self-start md:left-10"
+        to="/"
+      >
         <div className="flex h-[4.5rem] w-14 items-center justify-center bg-[#D5966C]">
           <img src={iconArrowLeft} alt="" />
         </div>
@@ -18,7 +21,7 @@ const Header = () => {
         center={[41.48140471508845, -71.3103603]}
         zoom={15}
         style={{
-          height: "34.375rem",
+          height: "37.5rem",
           width: "100%",
           position: "static",
           zIndex: 10,

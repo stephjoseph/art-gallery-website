@@ -3,15 +3,15 @@ import logo from "../../images/logo-black.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full flex-col gap-[2.375rem] bg-[#D5966C] px-8 py-12">
-      <Link to="/">
+    <footer className="flex w-full flex-col gap-[2.375rem] bg-[#D5966C] px-8 py-12 md:flex-row md:justify-center md:gap-0 md:py-14">
+      <Link className="md:mr-[4.063rem]" to="/">
         <img src={logo} alt="" />
       </Link>
-      <p className="text-base font-light leading-[1.625rem] tracking-normal text-[#151515]">
+      <p className="text-base font-light leading-[1.625rem] tracking-normal text-[#151515] md:mr-[8.313rem] md:w-[17.563rem]">
         The Modern Art Gallery is free to all visitors and open seven days a
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </p>
-      <div className="flex items-center gap-[1.25rem]">
+      <div className="flex h-[1.25rem] w-[6.25rem] items-center gap-[1.25rem]">
         <Link to="">
           <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
             <path

@@ -4,9 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @media (min-width: 768px) {
+    #header {
+      height: 43.75rem;
+      background-image: url("./images/tablet/image-hero.jpg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 27.313rem 43.75rem;
+    }
+  }
+}
 @layer components {
   .leaflet-div-icon {
     background-color: transparent;
     border: none;
+  }
+
+  @media (min-width: 768px) {
+    .leaflet-container {
+      height: 600px !important;
+    }
   }
 }
