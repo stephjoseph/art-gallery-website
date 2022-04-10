@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <header className="relative w-full">
       <Link
-        className="group absolute top-0 left-0 z-20 flex self-start md:left-10"
+        className="group group absolute top-0 left-0 z-20 flex self-start md:left-10 xl:left-[9.75rem]"
         to="/"
       >
-        <div className="flex h-[4.5rem] w-14 items-center justify-center bg-[#D5966C]">
+        <div className="flex h-[4.5rem] w-14 items-center justify-center bg-[#D5966C] group-hover:bg-[#151515] group-active:bg-[#151515]">
           <img src={iconArrowLeft} alt="" />
         </div>
-        <div className="flex h-[4.5rem] w-[12.75rem] items-center justify-center bg-[#151515] font-['Big_Shoulders_Display'] text-[1.25rem] font-extrabold uppercase leading-6 tracking-[3.64px] text-white">
+        <div className="flex h-[4.5rem] w-[12.75rem] items-center justify-center bg-[#151515] font-['Big_Shoulders_Display'] text-[1.25rem] font-extrabold uppercase leading-6 tracking-[3.64px] text-white group-hover:bg-[#D5966C] group-active:bg-[#D5966C]">
           Back to home
         </div>
       </Link>
